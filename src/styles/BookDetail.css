@@ -1,0 +1,230 @@
+.detail-container {
+    padding: 20px;
+    min-height: 100vh;
+}
+
+.back-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background: linear-gradient(135deg, #6f4e37, #8b7355);
+    color: #f5e6d3;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-bottom: 30px;
+    font-weight: 600;
+    transition: all 0.3s;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.back-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
+}
+
+.detail-content {
+    background: linear-gradient(to bottom, #f5e6d3, #e8d5bb);
+    border-radius: 15px;
+    padding: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    border: 3px solid #8b7355;
+}
+
+.detail-header {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 40px;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #8b7355;
+}
+
+.detail-cover img {
+    width: 300px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+    border: 3px solid #8b7355;
+}
+
+.detail-info {
+    flex: 1;
+}
+
+.detail-info h1 {
+    color: #3d2b1f;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    line-height: 1.2;
+}
+
+.publish-date {
+    color: #5d4e37;
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+}
+
+.authors-section {
+    margin-top: 30px;
+}
+
+.authors-section h3 {
+    color: #3d2b1f;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+}
+
+.author-detail {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border: 2px solid #d4c5b0;
+}
+
+.author-detail h4 {
+    color: #3d2b1f;
+    font-size: 1.2rem;
+    margin-bottom: 8px;
+}
+
+.author-birth {
+    color: #8b7355;
+    font-size: 0.95rem;
+    margin-bottom: 10px;
+    font-style: italic;
+}
+
+.author-bio {
+    color: #5d4e37;
+    line-height: 1.6;
+}
+
+.detail-body section {
+    margin-bottom: 40px;
+}
+
+.detail-body h2 {
+    color: #3d2b1f;
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #8b7355;
+}
+
+.description-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #d4c5b0;
+}
+
+.description-text {
+    color: #5d4e37;
+    font-size: 1.1rem;
+    line-height: 1.8;
+}
+
+.subjects-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #d4c5b0;
+}
+
+.subjects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+}
+
+.subject-badge {
+    background: linear-gradient(135deg, #8b7355, #a0826d);
+    color: #f5e6d3;
+    padding: 10px 18px;
+    border-radius: 20px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.2);
+    border: 2px solid #6f4e37;
+}
+
+.excerpts-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #d4c5b0;
+}
+
+.excerpt-card {
+    background: #faf7f2;
+    padding: 20px;
+    border-left: 4px solid #8b7355;
+    margin-bottom: 20px;
+    font-style: italic;
+    color: #5d4e37;
+    line-height: 1.7;
+}
+
+.links-section {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    border: 2px solid #d4c5b0;
+}
+
+.links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.external-link {
+    display: inline-block;
+    padding: 12px 20px;
+    background: linear-gradient(135deg, #6f4e37, #8b7355);
+    color: #f5e6d3;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s;
+    font-weight: 500;
+}
+
+.external-link:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.error-message {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    text-align: center;
+    border: 3px solid #8b7355;
+}
+
+.error-message h2 {
+    color: #3d2b1f;
+    margin-bottom: 20px;
+}
+
+.error-message p {
+    color: #5d4e37;
+    margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+    .detail-header {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .detail-cover img {
+        width: 250px;
+        height: 350px;
+    }
+
+    .detail-info h1 {
+        font-size: 2rem;
+    }
+}
